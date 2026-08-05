@@ -1,0 +1,13 @@
+# 1. Block every file and folder in the project by default
+*
+!*/
+
+# 2. Whitelist only your specific allowed file extensions
+!*.py
+!*.json
+!*.html
+!*.txt
+!*.png
+
+# 3. Explicitly ensure your gitignore file itself is tracked
+!.gitignore

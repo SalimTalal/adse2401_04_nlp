@@ -117,7 +117,7 @@ chi_pi_periodic: list[list[float]] = [
 # 4,5,6,7: 'chi1,2,3,4-group'
 # The atom positions are relative to the axis-end-atom of the corresponding
 # rotation axis. The x-axis is in direction of the rotation axis, and the y-axis
-# is defined such that the dihedral-angle-definiting atom (the last entry in
+# is defined such that the dihedral-angle-defining atom (the last entry in
 # chi_angles_atoms above) is in the xy-plane (with a positive y-coordinate).
 # format: [atomname, group_idx, rel_position]
 rigid_group_atom_positions: dict[str, list[tuple[str, int, tuple[float, float, float]]]] = {
@@ -541,7 +541,6 @@ atom_type_num = len(atom_types)  # := 37.
 
 # A compact atom encoding with 14 columns
 # pylint: disable=line-too-long
-# pylint: disable=bad-whitespace
 restype_name_to_atom14_names: dict[str, list[str]] = {
     "ALA": ["N", "CA", "C", "O", "CB", "", "", "", "", "", "", "", "", ""],
     "ARG": ["N", "CA", "C", "O", "CB", "CG", "CD", "NE", "CZ", "NH1", "NH2", "", "", ""],
@@ -566,7 +565,6 @@ restype_name_to_atom14_names: dict[str, list[str]] = {
     "UNK": ["", "", "", "", "", "", "", "", "", "", "", "", "", ""],
 }
 # pylint: enable=line-too-long
-# pylint: enable=bad-whitespace
 
 
 # This is the standard residue order when coding AA type as a number.
