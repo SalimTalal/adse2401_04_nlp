@@ -1,13 +1,15 @@
-# 1. Block every file and folder in the project by default
-*
-!*/
+# 1. Completely ignore the python environment and IDE folders first
+.app/
+.idea/
+**/_pycache_/
 
-# 2. Whitelist only your specific allowed file extensions
+# 2. Ignore everything else by default
+*
+
+# 3. Allow only these specific file extensions globally
 !*.py
 !*.json
 !*.html
 !*.txt
 !*.png
-
-# 3. Explicitly ensure your gitignore file itself is tracked
 !.gitignore
