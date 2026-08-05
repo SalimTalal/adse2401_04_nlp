@@ -1,12 +1,12 @@
-# 1. Completely ignore the python environment and IDE folders first
+# Block these specific directories first
 .app/
 .idea/
 **/_pycache_/
 
-# 2. Ignore everything else by default
+# Ignore all other files by default
 *
 
-# 3. Allow only these specific file extensions globally
+# Whitelist ONLY these specific file extensions globally
 !*.py
 !*.json
 !*.html
