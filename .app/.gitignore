@@ -1,12 +1,15 @@
-# Block these specific directories first
+# 1. Block virtual environments and IDE system folders completely
 .app/
 .idea/
-**/_pycache_/
+**/__pycache__/
 
-# Ignore all other files by default
+# 2. Block all files by default
 *
 
-# Whitelist ONLY these specific file extensions globally
+# 3. Allow Git to look inside subdirectories (Crucial for sess01 to sess14)
+!*/
+
+# 4. Whitelist only your specific file types globally
 !*.py
 !*.json
 !*.html
